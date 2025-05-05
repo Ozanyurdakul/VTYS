@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+ 
+  <title>Giris Yap/ Kayit Ol</title>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="app.js" defer></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0e0e10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: black;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #f28500;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d0c300;
+    }
+
+    .separator {
+      text-align: center;
+      margin: 20px 0;
+      color: #888;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Giris Yap</h2>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="E-Posta" required />
+      <input type="password" id="password" placeholder="Sifre" required />
+      <button type="submit">Giris Yap</button>
+    </form>
+
+```
+<div class="separator">veya</div>
+
+<h2>Kayit Ol</h2>
+<form id="signup-form">
+  <input type="email" id="signup-email" placeholder="E-Posta" required />
+  <input type="password" id="signup-password" placeholder="Sifre" required />
+  <button type="submit">Kayit Ol</button>
+</form>
+```
+
+  </div>
+
+</body>
+</html>
